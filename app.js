@@ -1,8 +1,6 @@
 const express = require('express');
 const hbs = require('hbs')
 
-var __dirname = '/Users/smeduru/samples/nodejs/webserver1';
-
 hbs.registerPartials(__dirname + "/views/partials");
 hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
